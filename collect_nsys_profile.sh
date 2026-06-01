@@ -24,7 +24,7 @@ CONCURRENCY=100
 NAMESPACE="llmd-bench"
 NGC_IMAGE="nvcr.io/nvidia/pytorch:24.12-py3"
 PROFILER_RANGE="100-110"
-OUTPUT_DIR="/Users/aansharm/vllm-profiler/profiles/nsys-collected"
+OUTPUT_DIR="${OUTPUT_DIR:-./profiles/nsys-collected}"
 
 # ── Parse args ────────────────────────────────────────────────────────────────
 

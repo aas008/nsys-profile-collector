@@ -28,13 +28,13 @@ S3_PREFIX="profiles/nsys"
 ACCELERATOR="H200"
 NAMESPACE="${NAMESPACE:-llmd-bench}"
 
-# AWS credentials (override via environment)
-export AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID:-AKIAS2QIQH3JEJOLIMUR}"
-export AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY:-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}"
+# AWS credentials (set via environment)
+export AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID:?Set AWS_ACCESS_KEY_ID}"
+export AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY:?Set AWS_SECRET_ACCESS_KEY}"
 
 # Local directories
-LOCAL_PROFILES_DIR="${LOCAL_PROFILES_DIR:-/Users/aansharm/vllm-profiler/profiles}"
-LOCAL_EXPORT_DIR="${LOCAL_EXPORT_DIR:-/Users/aansharm/vllm-profiler/profiles/nsys-json}"
+LOCAL_PROFILES_DIR="${LOCAL_PROFILES_DIR:-./profiles}"
+LOCAL_EXPORT_DIR="${LOCAL_EXPORT_DIR:-./profiles/nsys-json}"
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
